@@ -1,0 +1,179 @@
+:root {
+    --vermelho: #e40107;
+    --preto: #141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*elementos base*/
+
+body {
+    background: var(--preto)!important;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white !important;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+}
+
+header .logo {
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'arial Black', Times;
+    font-size: 40px;
+}
+
+header nav {
+    margin-left: 5%;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 20px;
+}
+
+header nav a:hover {
+    color: #fff;
+}
+
+/*filme pricinpal*/
+
+.filme-principal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)100%), url(/Interface_do_netflix/img/banner-the-rain-netflix.jpg);
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .decricao {
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.titulo {
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao {
+    background-color: rgba(0, 0, 0, .50);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover {
+    background-color: white;
+    color: black;
+}
+
+.botao i {
+    margin-right: 8px;
+}
+
+.container {
+    /* esse container ele muda altodo */
+    margin-left: 20px;
+}
+
+.filme-principal .container {
+    /*esse container muda so mento dentro de filme-principal */
+    width: 70%;
+}
+
+.box-filmes {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-filmes {
+    margin-top: 5px;
+}
+
+.busca {
+    margin-left: 50px;
+}
+
+.btn-busca {
+    height: 5px;
+    width: 50px;
+    background-color: rgba(0, 0, 0, .50);
+    border-radius: 4px;
+    color: white;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.d-flex {
+    margin-left: 5%;
+}
+
+.d-flex .btn-outline-success {
+    color: var(--vermelho)!important;
+    border-color: var(--vermelho)!important;
+}
+
+.d-flex .btn-outline-success:hover {
+    color: white!important;
+    background-color: var(--vermelho)!important;
+}
+
+.emoticons-container {
+    margin-left: 4%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+}
+
+.perfis {
+    background-color: var(--preto)!important;
+}
+
+.log-in {
+    color: #aaa!important;
+}
+
+.login-nome {
+    margin-right: 5px;
+}
+
+.compartilhamento {
+    margin-left: 40%;
+    cursor: pointer;
+}
+
+.compartilhamento:hover {
+    color: slategrey;
+}
+
+.sino {
+    margin-left: 40%;
+    cursor: pointer;
+}
+
+.sino:hover {
+    color: slategrey;
+}
